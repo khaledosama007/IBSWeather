@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/cardview_default_elevation"
+    android:paddingTop="@dimen/cardview_default_elevation">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/item_name_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:text="Name"
+                android:textSize="13sp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/item_city_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="6dp"
+                android:text="sdadadadad"
+                android:textColor="@color/colorAccent"
+                 />
+
+            <TextView
+                android:id="@+id/item_temp_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item_name_label"
+                android:layout_margin="6dp"
+                android:text="Temperature"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:id="@+id/item_temperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item_name_label"
+                android:layout_margin="6dp"
+                android:layout_toRightOf="@id/item_temp_label"
+                 />
+
+            <TextView
+                android:id="@+id/item_humidity_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item_city_name"
+                android:layout_margin="6dp"
+                android:layout_alignStart="@+id/item_max_temp_label"
+                android:text="Humidity"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:textSize="13sp"
+                />
+
+            <TextView
+                android:id="@+id/item_humidity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/item_city_name"
+                android:layout_margin="6dp"
+                />
+
+            <TextView
+                android:id="@+id/item_min_temp_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item_temp_label"
+                android:layout_margin="6dp"
+                android:text="Min Temperature"
+                android:textSize="13sp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:id="@+id/item_min_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item_temp_label"
+                android:layout_margin="6dp"
+                android:layout_toEndOf="@id/item_min_temp_label"
+                 />
+
+            <TextView
+                android:id="@+id/item_max_temp_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item_humidity_label"
+                android:layout_margin="6dp"
+                android:layout_toStartOf="@+id/item_max_temp"
+                android:text="Max Temperature"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:id="@+id/item_max_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/item_humidity"
+                android:layout_margin="6dp"
+
+                 />
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

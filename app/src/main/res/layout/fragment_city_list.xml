@@ -1,0 +1,22 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ibsweather.CityListFragment">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <SearchView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_view"
+        android:queryHint="Search a city" />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/city_list">
+
+    </ListView>
+</LinearLayout>
+</FrameLayout>

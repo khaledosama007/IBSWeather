@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">IBSWeather</string>
+    <string name="title_activity_maps">Map</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Weather_API_Key">17bee5e4024205962c0bad7e33d1bfc1</string>
+</resources>
